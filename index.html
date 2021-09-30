@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Akaya Kanadaka', cursive;
+            background-image: url(img/cover.png);
+            background-size: cover;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: initial;
+        }
+
+        a:hover {
+            color: initial;
+        }
+
+        .navbarnav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            height: 15vh;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 11vh;
+            height: 75vh;
+        }
+
+        .card {
+            margin: 0vw 4vw;
+            padding: 2vh;
+            border-radius: 5vh;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2vh 0vh 0.5vh;
+            background-color: black;
+            color: white;
+            height: 10vh;
+        }
+
+        @media only screen and (max-width : 800px) {
+            main {
+                flex-direction: column;
+                margin: 40vh 0vh;
+            }
+
+            .card {
+                margin: 2vh 0vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="bg-success">
+        <ul class="navbarnav">
+            <li class="nav-item" type="none">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" height="90 vh"></a>
+            </li>
+            <li class="nav-item text-white fs-1 p-3" type="none">
+                Basic Banking System
+            </li>
+            <li class="nav-item" type="none">
+                <img src="img/bank-building.png" alt="bank logo" height="80 vh">
+            </li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="card" style="width: 12rem;">
+            <img src="img/user1.jpg" class="card-img-top" alt="user">
+            <div class="card-body row text-center">
+                <a href="users.php" class="btn btn-outline-success"><i class="fas fa-users"></i> All Users</a>
+            </div>
+        </div>
+        <div class="card" style="width: 12rem;">
+            <img src="img/transfer_money.jpg" class="card-img-top" alt="transfer money">
+            <div class="card-body row text-center">
+                <a href="transact.php" class="btn btn-outline-primary"><i class="fas fa-exchange-alt"></i> Transfer
+                    Money</a>
+            </div>
+        </div>
+        <div class="card" style="width: 12rem;">
+            <img src="img/history.png" class="card-img-top" alt="history">
+            <div class="card-body row text-center">
+                <a href="history.php" class="btn btn-outline-danger"><i class="fas fa-history"></i> View History</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; Developed by Srinjoy Banerjee | All rights reserved
+        </p>
+    </footer>
+</body>
+
+</html>
